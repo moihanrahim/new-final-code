@@ -1,0 +1,10 @@
+fyers-apiv2
+flask
+flask_ngrok
+kiteconnect
+selenium
+nsetools
+schedule
+fastapi
+bs4
+pandas

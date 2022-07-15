@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "/home/jeffrey/moh/fyres_integration/demat_connecter.py", line 56, in place_order_zerodha
+    kite.place_order(tradingsymbol=symbol,
+  File "/home/jeffrey/.local/lib/python3.8/site-packages/kiteconnect/connect.py", line 360, in place_order
+    return self._post("order.place",
+  File "/home/jeffrey/.local/lib/python3.8/site-packages/kiteconnect/connect.py", line 846, in _post
+    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)
+  File "/home/jeffrey/.local/lib/python3.8/site-packages/kiteconnect/connect.py", line 918, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: Market orders are blocked for index options using after market orders(AMO). Try placing a LIMIT order.
+<kiteconnect.connect.KiteConnect object at 0x7f55e4e1a070>
+c
+wHkvTtuV84xHpVnJGuxJ3HlKjOQLqYxx
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2022-07-11 22:15:51.987765
+NIFTY2271416250PE NFO SELL 50 MARKET MIS amo
+Market orders are blocked for index options using after market orders(AMO). Try placing a LIMIT order.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Traceback (most recent call last):
+  File "/home/jeffrey/moh/fyres_integration/demat_connecter.py", line 56, in place_order_zerodha
+    kite.place_order(tradingsymbol=symbol,
+  File "/home/jeffrey/.local/lib/python3.8/site-packages/kiteconnect/connect.py", line 360, in place_order
+    return self._post("order.place",
+  File "/home/jeffrey/.local/lib/python3.8/site-packages/kiteconnect/connect.py", line 846, in _post
+    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)
+  File "/home/jeffrey/.local/lib/python3.8/site-packages/kiteconnect/connect.py", line 918, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: Market orders are blocked for index options using after market orders(AMO). Try placing a LIMIT order.
+<kiteconnect.connect.KiteConnect object at 0x7f4eb99a9070>
+c
+DmTboSWThVI7pzsPaUuiv5bbEf3L4c3K
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2022-07-11 22:16:06.746033
+NIFTY2271416250PE NFO SELL 50 MARKET MIS amo
+Market orders are blocked for index options using after market orders(AMO). Try placing a LIMIT order.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<kiteconnect.connect.KiteConnect object at 0x7f8cbf11a070>
+c
+Traceback (most recent call last):
+  File "algo_trading.py", line 303, in <module>
+    algo("buy", "INTRADAY", 50)
+  File "algo_trading.py", line 291, in algo
+    kite = zerodha_connect()
+  File "/home/jeffrey/moh/fyres_integration/zerodha_auth.py", line 48, in zerodha_connect
+    autologin()
+  File "/home/jeffrey/moh/fyres_integration/zerodha_auth.py", line 38, in autologin
+    request_token = driver.current_url.split('&request_token=')[1]
+IndexError: list index out of range
